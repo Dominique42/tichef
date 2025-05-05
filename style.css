@@ -1,0 +1,68 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+.flex{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.spacebeTween{
+    justify-content: space-between;
+}
+
+.w30{
+    width: 30%;
+}
+  
+header{
+    padding: 20px 0;
+}
+
+.container{
+    max-width: 1200px;
+    margin: auto;
+}
+
+.color{
+    color: orangered;
+}
+
+.points{
+    list-style-type: none;
+}
+
+.margin{
+    margin: 30px;
+}
+
+.bg-bleu{
+    background-color: blue;
+}
+
+.carte-recette{
+    margin-top: 90px;
+}
+
+.w30{
+    width: 30%;
+}
+
+
+
+
+.w100{
+    width: 100%;
+}
+
+footer{
+    display: flex;
+    gap: 50pxs;
+}
+
+.align{
+    text-align: center;
+}
+
