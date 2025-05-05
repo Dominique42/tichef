@@ -66,3 +66,27 @@ footer{
     text-align: center;
 }
 
+@media all and (max-width : 900px){
+    h2 {
+       background-color: yellow; 
+}
+}
+
+@media all and (max-width : 600px){
+    body{
+        background-color: rgb(13, 4, 79);
+    }
+    h2 {
+        background-color: red;
+    }
+}
+
+
+
+
+
+ 
+
+    
+
+
