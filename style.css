@@ -6,7 +6,6 @@
 
 .flex{
     display: flex;
-    flex-wrap: wrap;
 }
 
 .spacebeTween{
@@ -46,8 +45,8 @@ header{
     margin-top: 90px;
 }
 
-.w30{
-    width: 30%;
+.w50 {
+    width: 50%;
 }
 
 
@@ -80,6 +79,33 @@ footer{
         background-color: red;
     }
 }
+
+.width50{
+    width:50px; ;
+}
+
+
+.pad{
+    padding: 10px;
+}
+.gap{
+    gap : 20px;
+}
+
+.bord{
+    border : 2px solid black;
+    
+    
+}
+.width800{
+    width: 800px;
+}
+
+.borderR{
+    border-radius: 10px;
+}
+
+
 
 
 

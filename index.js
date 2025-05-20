@@ -1,36 +1,36 @@
 
 fetch("data.json")
     .then(reponse => reponse.json())
-    .then(data =>{
+    .then(data => {
         // afficher (data);
         console.log(data)
         afficher(data)
-        
+
     })
 
-        //role : afficher les cartes produits 
-        //paramtre : le tableau des produits
-        //return : rien 
+//role : afficher les cartes produits 
+//paramtre : le tableau des produits
+//return : rien 
 
-        function afficher(tableauRecettes) {
+function afficher(tableauRecettes) {
 
-            // une boucle pour récupére les objets du tableau 1 par 1  
+    // une boucle pour récupére les objets du tableau 1 par 1  
 
-            tableauRecettes.forEach(recette => {
-                let produits = ""
-                recette.ingredients.forEach(ingredient => {
-                    produits += `<li>${ingredient.quantite} ${ingredient.unite} ${ingredient.aliment}</li>`
-                });
-                let titre = recette.nom
-                let description = recette.desc
-                    
-                });
-            }
-                
-                
-                //cible l'endroit où je veux injecter mes cartes 
+    tableauRecettes.forEach(recette => {
+        let produits = ""
+        recette.ingredients.forEach(ingredient => {
+            produits += `<li>${ingredient.quantite} ${ingredient.unite} ${ingredient.aliment}</li>`
+        });
+        let titre = recette.nom
+        let description = recette.desc
 
-                document.getElementById("cartes").innerHTML += `<section class="carte-recette">
+    });
+}
+
+
+//cible l'endroit où je veux injecter mes cartes 
+
+document.getElementById("cartes").innerHTML += `<section class="carte-recette">
 
             <!-- en tête de la recette -->
             <div class="flex spacebeTween w30">
@@ -50,9 +50,9 @@ fetch("data.json")
                     </div>
 
                     <div class="flex spacebeTween">
-                        <img class="w30" src="${recette.img [1]}" alt="">
-                        <img class="w30" src="${recette.img [2]}" alt="">
-                        <img class="w30" src="${recette.img [3]}" alt="">
+                        <img class="w30" src="${recette.img[1]}" alt="">
+                        <img class="w30" src="${recette.img[2]}" alt="">
+                        <img class="w30" src="${recette.img[3]}" alt="">
                     </div>
                 </div>
 
@@ -102,8 +102,28 @@ fetch("data.json")
             </div>
 
         </section>`
-        
-             
-    
-    
-          
+
+    < section >
+
+    fetch("articles-data.json")
+        .then(reponse =>reponse.json())
+        .then(data => {
+            // afficher (data);
+
+            afficher(data)
+        });
+
+    </section >
+
+
+
+
+
+
+
+
+
+
+
+
+
