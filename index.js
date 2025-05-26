@@ -105,7 +105,7 @@ document.getElementById("cartes").innerHTML += `<section class="carte-recette">
 
     < section >
 
-    fetch("articles-data.json")
+    fetch("articles.data.json")
         .then(reponse =>reponse.json())
         .then(data => {
             // afficher (data);
